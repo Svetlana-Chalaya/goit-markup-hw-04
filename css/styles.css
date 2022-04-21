@@ -216,6 +216,13 @@ a {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Шапка.jpg);
+  background-repeat: no-repeat;
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -228,6 +235,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  background-repeat: no-repeat;
 }
 /*Button*/
 
@@ -359,6 +367,7 @@ a {
 
 .lead {
   margin: 0;
+  margin-bottom: 16px;
   color: var(--paragraph-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -371,12 +380,29 @@ a {
   display: flex;
 }
 
-.content-list-photo li:not(:last-child) {
+.content-photo:not(:last-child) {
   margin-right: 30px;
 }
 
 .content-title {
   margin-bottom: 10px;
+}
+
+.title-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.title-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  display: block;
+}
+
+.title-soc-item + .title-soc-item {
+  margin-left: 10px;
 }
 
 /*Футер разметка*/
