@@ -162,7 +162,7 @@ a {
 }
 
 .mailto {
-  display: block;
+  display: flex;
 
   color: var(--paragraph-text-color);
   font-weight: 500;
@@ -174,9 +174,17 @@ a {
   padding-bottom: 32px;
 }
 
+.mailto-icon {
+  margin-right: 10px;
+}
 .mailto:hover,
 .mailto:focus {
   color: var(--accent-color);
+}
+
+.mailto-icon:hover,
+.mailto-icon:focus {
+  fill: currentColor;
 }
 
 .phone {
@@ -292,6 +300,30 @@ a {
 
 .feature-ul li {
   width: 270px;
+}
+
+.feature-ul::before {
+  content: icon;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.feature-item {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-icon {
+  display: flex;
+  margin: 25px auto;
 }
 
 .feature .title {
@@ -425,7 +457,29 @@ a {
   fill: #ffffff;
 }
 
-/*Футер разметка*/
+.logo-companies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.logo-companies-list {
+  display: flex;
+}
+
+.logo-companies-icon {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+}
+
+.logo-companies-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*-----------FOOTER------------*/
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -448,8 +502,19 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.address-footer {
+  display: flex;
+}
+
 .address-footer li:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-soc-text {
+  color: var(--primary-text-color);
+  font-family: inherit;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .search {
