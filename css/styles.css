@@ -163,6 +163,7 @@ a {
 
 .mailto {
   display: flex;
+  align-items: center;
 
   color: var(--paragraph-text-color);
   font-weight: 500;
@@ -172,6 +173,7 @@ a {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: #757575;
 }
 
 .mailto-icon {
@@ -182,16 +184,16 @@ a {
   color: var(--accent-color);
 }
 
-.mailto-icon:hover,
-.mailto-icon:focus {
-  fill: currentColor;
+.mailto:hover .mailto-icon,
+.mailto:focus .mailto-icon {
+  fill: var(--accent-color);
 }
 
 .phone {
-  display: block;
+  display: flex;
+  align-items: center;
 
   color: var(--paragraph-text-color);
-  width: 122px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -200,11 +202,21 @@ a {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: #757575;
+}
+
+.phone-icon {
+  margin-right: 10px;
 }
 
 .phone:hover,
 .phone:focus {
   color: var(--accent-color);
+}
+
+.phone:hover .phone-icon,
+.phone:focus .phone-icon {
+  fill: var(--accent-color);
 }
 
 /*Стили для index.html*/
@@ -285,7 +297,7 @@ a {
 
 /*-----Характеристика-----*/
 
-.feature {
+/*.feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -304,27 +316,32 @@ a {
 
 .feature-ul::before {
   content: icon;
-}
+}*/
 
 .feature-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 1px;
 }
 
-.feature-item {
+/*.feature-item {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-}
+}*/
 
-.feature-item:not(:last-child) {
+/*.feature-item:not(:last-child) {
   margin-right: 30px;
-}
+}*/
 
-.feature-icon {
+/*.feature-icon {
   display: flex;
   margin: 25px auto;
-}
+}*/
 
 .feature .title {
   font-weight: 700;
@@ -467,12 +484,20 @@ a {
   display: flex;
 }
 
-.logo-companies-icon {
+.logo-companies-link {
+  display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   width: 170px;
   height: 92px;
+  fill: #afb1b8;
+}
+
+.logo-companies-icon:hover,
+.logo-companies-icon:focus {
+  fill: var(--accent-color);
 }
 
 .logo-companies-item:not(:last-child) {
@@ -541,9 +566,15 @@ footer {
 }
 
 .footer-box {
-  display: inline-block;
+  display: block;
+  margin-left: 70px;
   font-family: inherit;
   font-style: normal;
+}
+
+.footer-soc-text {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-soc-list {
@@ -688,6 +719,10 @@ header {
 
 .flex-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.cart-bg-shadow {
+  display: block;
 }
 
 .cart-bg-shadow:hover,
