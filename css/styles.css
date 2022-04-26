@@ -297,7 +297,7 @@ a {
 
 /*-----Характеристика-----*/
 
-/*.feature {
+.feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -316,7 +316,7 @@ a {
 
 .feature-ul::before {
   content: icon;
-}*/
+}
 
 .feature-list {
   display: flex;
@@ -325,25 +325,22 @@ a {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 1px;
-}
-
-/*.feature-item {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
   margin-bottom: 30px;
-}*/
+}
 
-/*.feature-item:not(:last-child) {
+.feature-item:not(:last-child) {
   margin-right: 30px;
-}*/
+}
 
-/*.feature-icon {
+.feature-icon {
   display: flex;
   margin: 25px auto;
-}*/
+}
 
 .feature .title {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -352,6 +349,7 @@ a {
 }
 
 .subject {
+  display: flex;
   margin: 10px 0 0;
   color: var(--paragraph-text-color);
   font-size: 14px;
@@ -474,10 +472,22 @@ a {
   fill: #ffffff;
 }
 
+/*--------Постоянные клиенты------*/
+
+.content-logo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .logo-companies {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .logo-companies-list {
@@ -497,6 +507,16 @@ a {
 
 .logo-companies-icon:hover,
 .logo-companies-icon:focus {
+  fill: var(--accent-color);
+}
+
+.logo-companies-link:hover,
+.logo-companies-link:focus {
+  border-color: var(--accent-color);
+}
+
+.logo-companies-link:hover .logo-companies-icon,
+.logo-companies-link:focus .logo-companies-icon {
   fill: var(--accent-color);
 }
 
