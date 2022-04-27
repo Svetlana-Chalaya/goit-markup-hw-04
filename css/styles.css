@@ -243,6 +243,7 @@ a {
     url(../images/Шапка.jpg);
   background-repeat: no-repeat;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -531,8 +532,12 @@ footer {
   background-color: #2f303a;
 }
 
+.footer-box-hero {
+  display: inline-block;
+}
+
 .logo-footer {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -545,10 +550,6 @@ footer {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.address-footer {
-  display: flex;
 }
 
 .address-footer li:not(:last-child) {
@@ -586,7 +587,8 @@ footer {
 }
 
 .footer-box {
-  display: block;
+  display: inline-block;
+  padding-top: 72px;
   margin-left: 70px;
   font-family: inherit;
   font-style: normal;
